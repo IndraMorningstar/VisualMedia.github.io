@@ -1,0 +1,98 @@
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, inital scale=1.0"/>
+        <meta http-equiv="X-UA-compatible" content="IE=edge"/>
+        <title>Seni Visual</title>
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap-grid.min.css" integrity="sha512-ZuRTqfQ3jNAKvJskDAU/hxbX1w25g41bANOVd1Co6GahIe2XjM6uVZ9dh0Nt3KFCOA061amfF2VeL60aJXdwwQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <body>
+    <section id="banner">
+        <a href="Index.html">
+            <img src="image/logo2.png" class="logo">
+        </a>
+        <div class="banner-text">
+            <div class="content">
+                <h1>VISUAL MEDIA</h1>
+                <p>DIGITAL</p>
+        </div>
+    </section>
+    
+    <!-- navbar  -->
+
+    <div id="sidenav">
+        <nav>
+        <ul>
+            <li><a href="seni rupa 2d.html">SENI RUPA 2D</a></li>
+            <li><a href="seni rupa 3d.html">SENI RUPA 3D</a></li>
+            <li><a href="seni visual.html">SENI VISUAL</a></li>
+            <li><a href="seni pertunjukan.html">SENI PERTUNJUKAN</a></li>
+        </ul>
+        </nav>
+    </div>
+    <div id="menuBtn">
+        <img src="image/side nav.png" id="menu">
+    </div>
+
+    <script>
+        var menuBtn = document.getElementById("menuBtn")
+        var sidenav = document.getElementById("sidenav")
+        var menu = document.getElementById("menu")
+
+        menuBtn.onclick = function(){
+            if(sidenav.style.right == "-350px"){
+                sidenav.style.right = "0";
+                menu.src = "image/close.png";
+            }
+            else{
+                sidenav.style.right = "-350px";
+                menu.src = "image/side nav.png";
+            }
+        }
+    </script>
+
+    <!-- navbar selesai -->
+
+    <!--footer-->
+
+    <section id="footer">
+        <div class="title-text">
+        <p>CONTACT US</p>
+        </div>
+    <div class="footer-row">
+        <div class="footer-left">
+            <h1>Company</h1>
+            <p>Home</p>
+            <P>About</P>
+        </div>
+        <Div class="footer-center>">
+            <h1>Exploration</h1>
+            <P>Seni Rupa 2D</P>
+            <P>Seni Rupa 3D</P>
+            <P>Seni Visual</P>
+            <P>Seni Pertunjukan</P>
+        </Div>
+        <div class="footer-right">
+            <h1>Support</h1>
+            <p>FAQ</p>
+            <p>About us</p>
+            <p>Contact us</p>
+        </div>
+    </div>
+    <div class="social-links">
+        <a href="https://www.youtube.com/@visualmediacirebon396">
+            <img src="image/youtube.png" alt="youtube" class="img-content">
+        </a>
+        <a href="https://www.instagram.com/visual_media_crbn">
+            <img src="image/instagram.png" alt="instagram" class="img-content">
+        </a>
+        <a href="https://www.youtube.com/@visualmediacirebon396">
+            <img src="image/facebook.png" alt="facebook" class="img-content">
+        </a>
+    </div>
+    </section>
+
+    <!-- footer selesai -->
+    
+    </body>
+</html>
